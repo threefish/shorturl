@@ -1,0 +1,11 @@
+{
+  "url": "jdbc:mysql://127.0.0.1:3306/newapp",
+  "username": "root",
+  "password": "123456",
+  "testWhileIdle": true,
+  "validationQuery": "select 1",
+  "maxActive": 100,
+  "maxWait": 1500,
+  "filters": "mergeStat",
+  "connectionProperties": "druid.stat.slowSqlMillis=2000"
+}
