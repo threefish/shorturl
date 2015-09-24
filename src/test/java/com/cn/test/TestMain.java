@@ -16,14 +16,14 @@ public class TestMain {
     public static void main(String[] args) {
         Dao dao = HucDao.getInstance();
         if (dao != null) {
-            Daos.createTablesInPackage(dao, "com.huc.app.core.db", false);
+            Daos.createTablesInPackage(dao, "com.cn.db.bean", false);
             System.out.println("connect db is done");
         } else {
             System.out.println("connect db is error");
         }
         ShortUrlService service = new SequenceBaseShortUrlService();
         for (int i = 0; i <= 100000; i++) {
-            System.out.println(i + " : " + service.convertShort("http://www.cnbeta.com/articles/43280" + i + ".htm"));
+            System.out.println(i + " : " + service.convertShort("http://www.threefish.tk/" + i + ".htm"));
         }
     }
 }
